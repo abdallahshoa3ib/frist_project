@@ -1,0 +1,885 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+}
+.section1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../imges/Desk\ setups\ with\ minimal\ designs\ to\ increase\ your\ work\ from\ home\ productivity!\ -\ Yanko\ Design.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 61px;
+    position: fixed;
+    background-color: rgb(23, 16, 16);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header img {
+    height: 61px;
+    width: 58px;
+    float: left;
+    margin-left: 120px;
+    margin-right: 490px;
+}
+
+.header li {
+    display: inline-block;
+    margin-top: 19px;
+    margin-left: 27px;
+    font-size: 25px;
+
+}
+.home{
+    color: red;
+    text-decoration: none;
+}
+.nothome {
+    text-decoration: none;
+    color: white;
+}
+
+.nothome:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+
+}
+
+.overlay h2 {
+    font-size: 78px;
+    font-weight: 700;
+    color: white;
+}
+
+.overlay p {
+    font-size: 40;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content button {
+    height: 73px;
+    width: 150;
+    margin-left: 16;
+    margin-top: 10;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+  
+}
+
+.content button:hover {
+    opacity: 0.8;
+
+}
+
+.learn {
+    background:rgba(165,45, 45 ,1);
+    color: white;
+}
+.learn:hover{
+    background:rgba(165,45, 45 ,0.8);
+}
+/* ......finish section1....... */
+.section2 {
+  
+    width: 100%;
+}
+
+.section2-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.underline-title {
+    height: 3px;
+    width: 120px;
+    margin: auto;
+    background-color: black;
+}
+
+.section2-countaner {
+    margin: auto;
+    width: 80%;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.section2-parent div {
+    width: 30%;
+    text-align: center;
+
+    float: left;
+    border: 2px black solid;
+    position: relative;
+}
+
+.magic {
+    margin: 0px 5%;
+}
+
+.section2-parent i {
+    font-size: 35px;
+    color: rgb(65, 65, 147);
+    margin-top: 9px;
+
+}
+
+.section2-parent h2 {
+    font-size: 40px;
+}
+
+.section2-parent p {
+    font-size: 22px;
+}
+
+.section2-parent a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.section2-parent div:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    transition: 1s;
+    opacity: 0;
+}
+
+.section2-parent div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.section2-parent div:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    right: 0px;
+    background-color: #333;
+    transition: 1s;
+    opacity: 0;
+}
+
+.section2-parent div:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+/* ......finish section2....... */
+.work {
+    margin-top: 159px;
+    background-color: #e8e8e8;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.work_content {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+.work_item{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding:20px;
+}
+.work_item img{
+    width: 100%;
+}
+.work_item.mg {
+    margin: 0 5%;
+}
+.work_item  .work_overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.work_item:hover .work_overlay{
+    opacity:1;
+    visibility: visible;
+}
+.work_overlay  .work_overlay_info{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 80%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.work_overlay h3 {
+    font-size: 30px;
+    color: #6195ff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    
+    display: block;
+    margin-bottom: 5px;
+ 
+
+}
+.work_item span{
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+ 
+    display: block;
+    margin-bottom: 5px;
+}
+.work_overlay a  {
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    background-color: #6195ff;
+    position: relative;
+    top:15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s ;
+    transition-delay: .6s;
+}
+.work_item:hover h3,
+.work_item:hover .work_overlay a,
+.work_item:hover .work_overlay span{
+    top:0;
+   opacity: 1;
+   visibility: visible;
+}
+.work_content a i{
+    line-height: 40px;
+}
+
+
+/* finish section3 */
+.section4 {
+    height: 100vh;
+    width: 100%;
+}
+
+.section4-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 110px;
+    
+}
+
+.underline-title4 {
+    height: 3px;
+    width: 120px;
+    margin: auto;
+    background-color: rgb(103, 77, 207);
+    margin-bottom: 90px;
+}
+
+.countaner4up,.countaner4down {
+    margin: auto;
+    width: 75%;
+    overflow: hidden;
+
+}
+
+.section4-parent div {
+    width: 30%;
+
+    height: 180px;
+    float: left;
+    border: 1px black solid;
+    position: relative;
+}
+
+.countaner4down div {
+    margin-top: 40px;
+   
+}
+
+.support,
+.graphic {
+    margin: 0 5%;
+}
+.content4 h2 {
+position: absolute;
+left: 70px;
+top:26px;
+font-size: 25px;
+}
+.content4 i {
+    margin-top: 10px; 
+     position: absolute;
+    left:15px;
+    top:26px;
+    font-size: 30px;
+    color: skyblue;
+}
+.content4 p{
+    position: absolute;
+    top:60px ;
+    left: 70px;
+}
+
+
+.content4:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333; 
+}
+
+.content4:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.section4-parent div:hover { 
+    color: rgba(255, 255, 255, 0.767);
+     }
+    /* finish section4 */
+
+    .why_title {
+        font-size: 45px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+        padding-top: 50px;
+    padding-left: 100px;
+    }
+    
+    .why_line {
+        width: 120px;
+        height: 2px;
+        background-color: rgb(43, 78, 143);
+        margin-left: 175px;
+    }
+    
+    
+    .why {
+        background-color: #f9f9f9;
+        margin-top: 150px;
+        overflow: hidden;
+        height: 80vh;
+    }
+    
+    .why_item {
+        width: 50%;
+        float: left;
+    
+    }
+    .why_list {
+        list-style: none;
+        margin-top: 50px;
+    
+        font-size: 25px;
+    }
+    
+    .why_item i {
+        color: rgb(43, 78, 143);
+    
+    }
+    .why_list li {
+        margin-top: 10px;
+        margin-left: 100px;
+        color: #333;
+        opacity: 0.7;
+    }
+    .why_img img {
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        margin: auto;
+        display: block;
+    }
+    .why_dot {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .why_dot li {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-color: #a8a8a8;
+        margin: 10px 5px;
+        border-radius: 50%;
+    }
+    
+    .why_dot li.active {
+        background-color: #6195ff;
+    }
+    
+    .why_dot li:hover {
+        background-color: #6195ff;
+    }
+    
+/* finish section5 */
+.achiev {
+    width: 100%;
+    height: 350px;
+ position: relative;
+    margin-bottom: 250px;
+    background-image: url(../imges/Freepik_\ Download\ Free\ Videos\,\ Vectors\,\ Photos\,\ and\ PSD.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.achiev_overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.achiev_contact {
+    padding-top: 130px;
+    overflow: hidden;
+}
+
+.achiev_item {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.achiev_item i {
+    font-size: 50px;
+    color:skyblue;
+    margin-bottom: 15px;
+
+}
+
+.achiev_item h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.achiev_item p {
+    color: white;
+
+    font-size: 20px;
+}
+/* finish section6 */
+.price {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px; 
+    overflow: hidden;
+height: 100vh;
+}
+
+.price_content {
+    width: 30%;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.middle {
+    margin: 0% 5%;
+}
+
+.c {
+    height: 150;
+    width: 150;
+    margin: auto;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 50%;
+}
+
+.dt {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.ct {
+    font-size: 40px;
+margin-top: 22px;
+color: #333;
+}
+.price_content:hover .ct{
+    color: red;
+}
+.m {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.price p {
+    font-size: 20px;
+  
+    margin: 12px 0;
+}
+
+.price button {
+    width: 165px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 30px 0
+   
+}
+
+button:hover {
+    background-color: rgb(189, 191, 194);
+  
+}
+
+.price_content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 0;
+    background-color:#333;
+    transition: 1s;
+    opacity: 0;
+    border-radius: 5%;
+ 
+}
+
+
+.price_content:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.title7{
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-align: center}
+
+.underline7{
+    width: 140px;
+    height: 2px;
+    background-color: rgb(43, 78, 143);
+    margin: auto;
+}
+/* finish section7 */
+.parent8{
+  position: relative;
+}
+.achiev_overlay8{
+    position: absolute;
+  
+    top: 50%;
+    left: 50%;
+height: 100%;
+width: 50%;
+    transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.photo7{
+    height: 90;
+    width: 90;
+   
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 50%;
+background-image: url(../imges/Working\ Man.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+top: 113;
+left: 34%;
+}
+.hcontrol{
+  position: relative;
+  top: 58;
+  left: 47%;
+}
+.achiev_contact8 p{
+    color:white;
+font-size: 20;
+padding-left: 36%;
+    padding-top: 90px
+}
+.hcontrol h3{
+    color: white;
+    padding-top: -8;
+}
+.hcontrol h4{
+    color: blue;
+}
+.achiev8{
+    width: 100%;
+    height: 350px;
+ position: relative;
+    margin-bottom: 250px;
+    background-image: url(../imges/Keyboard\ Computer\ Office\ Business\ Background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* finish section8 */
+.title9{
+    font-size: 45px;
+    margin-bottom: 5px;
+    text-align: center}
+
+.underline9{
+    width: 140px;
+    height: 2px;
+    background-color: rgb(43, 78, 143);
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+.container9{
+    margin: auto;
+    width: 80%;
+    height: 70vh;;
+}
+.team-item{
+    position: relative;
+    float: left;
+    width: 30%;
+padding: ;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.4);
+padding-top: 15px;
+padding-bottom: 15px
+}
+.mid{
+    margin: 0 5%;
+}
+
+
+.team-img{
+    margin: auto;
+    width: 85%;
+   
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.icon9{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0 , 0, 0.6);
+    
+    transition: 1s;
+    opacity: 0;
+}
+.team-item:hover .icon9{
+    
+    opacity: 1;
+    
+}
+.icon9 a{
+    display: block;
+width: 42px;
+height: 42px;
+margin-left: auto;
+background-color:skyblue;
+
+color: white
+}
+.icon9 i{
+    line-height: 42px;
+}
+.team-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 0;
+    background-color:#333;
+    transition: 1s;
+    opacity: 0;
+    
+ 
+}
+
+
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+.team-content h4{
+font-size: 20px;
+color: black;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.team-content p{
+    font-size: 18px;
+    color: #333;
+}
+
+.team-item:hover h4{
+color: white;
+}
+.team-item:hover p{
+    color: skyblue;
+}
+/* finish section9 */
+.countainer10{
+   margin: auto;
+    width: 80%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, .1);
+}
+.news{
+    position: relative;
+float: left;
+width: 30%;
+height: 100%;
+margin: auto;
+background-color: white;
+padding-left: 20px;
+position: relative;
+}
+.news img{
+    display: block;
+text-align: center;
+}
+.mid10{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.news i,span{
+    font-size: 13px;
+    padding: 30px 0;
+}
+.news a{color: skyblue;}
+.news h4{
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.news p{
+    font-size: 17px;
+    padding-bottom:35px ;
+}
+.read{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.news:after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    background-color: skyblue;
+    opacity: 0;
+}
+.news:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+}
+/* finish section10 */
+.parent11{
+    width: 100%;
+    height: 41%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.copyright{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.copyright img{
+display: block;
+padding-bottom: 15px;
+margin: auto;
+}
+.copyright button{
+    background-color: #6195ff;
+    border: none;
+    height: 50px; 
+    width: 50px;
+    border-radius: 25px
+}
+.copyright button:hover{
+    background-color: blue;
+    transition: 1.2s;
+    box-shadow: 1px 1px 40px 1px  #6195ff;
+}
+.copyright a {
+    
+    color: white;
+    font-size: 20px;
+}
+.copyright p{
+padding-top: 15px;
+color: white;
+padding-bottom: 5px;
+opacity: .7;
+
+}
+.copyright span{
+    color: white;
+    opacity: 0.7;
+}
